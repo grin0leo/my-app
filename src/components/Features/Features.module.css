@@ -1,0 +1,162 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+.imgBlock{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    
+    
+}
+.img{
+    width: 100%;
+    height: auto;
+}
+.imgMob{
+    display: none;
+    width: 100%;
+    height: auto;
+    image-rendering: optimizeQuality;
+}
+
+.imgBlock::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35%; /* Высота размытого градиента */
+
+    background: linear-gradient(360deg, #F5F5F5 19.44%, rgba(232, 232, 232, 0) 100%);
+
+
+    pointer-events: none; /* Чтобы события мыши не передавались этому псевдоэлементу */
+}
+
+/* .mainBlock{
+
+} */
+.mainText{
+    font-family: Proxima Nova;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 59.65px;
+    text-align: center;
+    white-space: nowrap;
+
+    margin: 12%;
+
+}
+.grid{
+    display: grid;
+    grid-template-rows: auto auto; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 110px ;
+}
+.textBlock{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 35%;
+}
+.text1{
+
+    font-family: Proxima Nova Light;
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 42.63px;
+    text-align: center;
+    color: rgba(0, 158, 255, 1);
+    
+
+
+}
+.text2{
+
+    font-family: Proxima Nova Light ;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.92px;
+    text-align: center;
+    color: rgba(153, 153, 153, 1);
+
+}
+@font-face {
+    font-family: Proxima Nova Light ;
+    src: url('./assets/proximanova_light.otf') format('truetype');
+}
+@media (max-width: 768px) {
+
+    .img{
+        display: none;
+    }
+    .imgMob{
+        display: block;
+    }
+    .imgBlock::after {
+        content: none ;}
+
+
+
+}
+@media (max-width: 768px) {
+    .icon{
+/* ВОЗМОЖНО ПОМЕНЯТЬ */
+        flex-basis: 110px;
+    }
+
+    .text1{
+        font-family: Proxima Nova ;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 23px;
+        text-align: center;
+
+    }
+    .text2{
+        font-family: Proxima Nova;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 14.62px;
+        letter-spacing: 0.02em;
+        text-align: center;
+
+    }
+    .iconSize{
+        width: 85%;
+        height: auto;
+    }
+    .mainText{
+        font-family: Proxima Nova;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32.5px;
+        text-align: center;
+
+    }
+
+}
+@media (max-width: 768px) {
+    .mainText{
+        font-size: 24px;
+    }
+}

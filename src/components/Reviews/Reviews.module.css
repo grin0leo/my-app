@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+}
+.text{
+    
+    font-family: Proxima Nova Bold;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 59.65px;
+    text-align: center;
+
+}
+.img{
+    border: 3.31px solid rgba(0, 158, 255, 1);
+    
+    height: auto;
+}
+.icon{
+    
+}
+.scrollBlock{
+    display: none;
+}
+@media (max-width: 1020px){
+
+    .img{
+        width: 25%;
+        height: auto;
+    }
+    .icon{
+        width: 7%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    .reviews{
+        display: none;
+    }
+    .scrollBlock{
+        
+        display: flex; 
+        flex-direction: row; 
+        align-items: stretch; 
+        justify-content: space-between;
+        overflow-x: auto; 
+        gap: 5%;
+    }
+    .img{
+        width: 50%;
+        height: auto;
+    }
+}
+@media (max-width: 520px){
+    .text{
+        font-family: Proxima Nova;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24.5px;
+        text-align: center;
+
+    }
+}

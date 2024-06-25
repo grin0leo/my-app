@@ -1,0 +1,231 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 4%;
+    gap: 2%;
+    
+}
+.h1{
+
+    font-family: Proxima Nova Bold;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 59.65px;
+    text-align: center;
+    margin-bottom: 2%;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 1.5%;
+    /* ROW-GAP ломает верстку, добавил margin-bottom у кажого объекта  */
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    
+    
+}
+.text1{
+    
+    font-family: Proxima Nova Bold;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    color: rgba(50, 57, 65, 1);
+    margin-top: 6%;
+    
+
+}
+.text2{
+        
+    font-family: Proxima Nova;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.51px;
+    text-align: center;
+
+    color: rgba(153, 153, 153, 1);
+
+    margin-top: 4%;
+}
+.price{
+    
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.92px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    color: rgba(50, 57, 65, 1);
+
+}
+.button{
+    
+    
+    font-family: Proxima Nova;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.51px;
+    text-align: center;
+    padding: 5%;
+    
+    color: rgba(198, 198, 198, 1);
+    border: 1px solid rgba(198, 198, 198, 1);
+    transition: 0.3s;
+
+}
+.button:hover{
+    color: rgba(255, 255, 255, 1);
+    border:  1px solid rgba(0, 158, 255, 1);
+    background-color: rgba(0, 158, 255, 1);
+    transition: 0.3s;
+}
+
+.SeeMore{
+
+    font-family: Proxima Nova ;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.92px;
+    text-align: center;
+
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+
+    margin-top: 4%;
+
+
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(0, 158, 255, 1);
+
+}
+.imgBlock{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 35%;
+
+   
+}
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 55%;
+    
+}
+.none{
+    width:200px;
+    height: 200px;
+}
+
+.img{
+
+    z-index: 10;
+    margin: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .textBlock{
+        flex-basis: 40%
+    }
+    .text1{
+        font-family: Proxima Nova;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        text-align: left;
+
+        
+    }
+    .text2{
+        font-family: Proxima Nova;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.32px;
+        text-align: left;
+
+    }
+    .button{
+
+    }
+}
+.scrollBlock {
+    max-height: 700px;
+    display: none;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    
+    gap: 50px;
+  }
+  
+@media (max-width: 768px) {
+    .grid{
+        display: none;
+    }
+    
+    .scrollBlock{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-left: 4%;
+        
+       
+    }
+    .container{
+        /*aligin items ломает верстку, при этом в каталоге я тоже его использовал, почему????????  */
+        align-items: normal;
+        flex-grow: 0;
+        width: 100%;
+        /* без отступов все работает прекрасно  */
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .h1{
+        margin: auto;
+        font-family: Proxima Nova;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 32.5px;
+        text-align: center;
+        margin-bottom: 3%;
+
+    }
+    .img{
+        
+    
+    }
+    .SeeMore{
+        margin: auto;
+    }
+
+}

@@ -1,0 +1,96 @@
+.container{
+    background-color: rgba(50, 57, 65, 1);
+    
+    display: flex; /* Устанавливаем контейнеру гибкий макет */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    flex-grow: 0; /* Добавляем flex-grow чтобы растягивать контейнер на всю доступную высоту */
+    justify-content: center; /* Распределяем пространство между ссылками */
+
+    min-height: 100px;
+    
+
+        
+    
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 140px); /*если что-то сломалось смотреть сюда а контретнее на 140 px(второе число - это размер типо)*/
+    grid-template-rows: auto auto;
+    gap: 0px; 
+    
+  }
+  
+
+.item {
+     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 0.5s;
+
+}
+.item:hover{
+    background: rgba(0, 158, 255, 1);
+    
+    transition: 0.5s;
+
+}
+  
+  .text{
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.92px;
+    text-align: center;
+    color: rgba(132,136,141);
+    transition: 0.5s;
+
+    white-space: nowrap;
+
+  }
+  .item:hover .text{
+    color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+
+.scrollBlock {
+  max-height: 155px;
+  display: none;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  
+  overflow-x: auto;
+}
+@media (max-width: 1020px) {
+  .grid {
+    grid-template-columns: repeat(7, 115px); 
+  }
+}
+
+@media (max-width: 840px) {
+  .grid{
+    display: none;
+  }
+
+  .item{
+    min-width: 20%;
+    
+    padding-left: 6%;
+    padding-right: 6%;
+    
+    
+
+  }
+  .text{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .scrollBlock{
+    display: flex;
+  }
+  
+}

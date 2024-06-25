@@ -1,0 +1,405 @@
+.container{
+    display: flex; /* Устанавливаем контейнеру гибкий макет */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    justify-content: center; /* Распределяем пространство между ссылками */
+    
+
+    background: rgba(255, 255, 255, 1);
+    margin-left: 19%;
+    margin-right: 19%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+.segWay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.namePrice{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 600px;
+
+}
+.name {
+  font-family: Proxima Nova Bold;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 69.84px;
+  text-align: left;
+  white-space: pre-line;
+  margin: 0%;
+  color: rgba(50, 57, 65, 1);
+}
+.totalBlock{
+    border: 2px solid rgba(153, 153, 153, 1);
+    min-width: 35%; 
+    padding: 2%;
+    /* РЕШИТЬ ЧТО0-ТО С МИН ВИЗ */
+
+}
+.randomText{
+   
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.92px;
+    text-align: left;
+
+}
+.yearsBlock{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+.yearsFill{
+    border: 1px solid rgba(153, 153, 153, 1);
+    padding-left: 8%;
+    padding-right: 8%;
+    
+}
+.yearsFont{
+    
+    font-family: Proxima Nova;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.51px;
+    text-align: center;
+
+}
+.promoBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.priceBlock{
+    display: flex;
+    flex-direction: column;
+
+}
+.price1{
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.92px;
+    text-align: left;
+    text-decoration: line-through;
+    color: rgba(50, 57, 65, 1);
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+.price2{
+    
+    font-family: Proxima Nova Bold;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 42.63px;
+    text-align: left;
+    color: rgba(50, 57, 65, 1);
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+
+}
+.promoFont{
+    
+    font-family: Proxima Nova Bold;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.92px;
+    text-align: left;
+    color: rgba(0, 158, 255, 1);
+    max-width: 26%;
+
+}
+@font-face {
+    font-family: 'Proxima Nova Bold';
+    src: url('./assets/font/proximanova_bold.otf') format('truetype');
+ }
+.buttonsBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.button{
+    
+    font-family: Proxima Nova Bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.92px;
+    text-align: center;
+    background: rgba(0, 158, 255, 1);
+    color: rgba(255, 255, 255, 1);
+
+    padding-left: 13.5%;
+    padding-right: 13.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    
+    margin-bottom: 1%;
+
+}
+.paymentBlock{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+.paymentTexts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.pt1{/* paymentText1 */
+    
+    font-family: Proxima Nova;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.92px;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+}
+.blue{
+    font-family: Proxima Nova Bold;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.92px;
+    text-align: left;
+
+    color: rgb(0, 158, 255);
+}
+.green{
+   
+    font-family: Proxima Nova Bold;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.92px;
+    text-align: left;
+
+    color: rgb(106, 205, 104) ;
+}
+.payMethod{
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 10px; /* промежуток между колонками */
+}
+
+
+
+/* МОБИЛЬНАЯ ВЕРСТКА, СТИЛИ! */
+
+.mobileContainer{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.SegArrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ImgMobile {
+    max-width: 70%; /* Ограничиваем максимальную ширину до ширины контейнера */
+    height: auto;
+}
+.mobilePromo{
+    border: 6px solid rgba(0, 158, 255, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.PromoText{
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+/* mobilePromoText */
+.mPT1{
+    font-family: Proxima Nova Bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.5px;
+    text-align: left;
+    color: rgba(50, 57, 65, 1);
+
+    margin-bottom: 0%;
+
+}
+.blueMPT1{
+    color: rgb(0, 158, 255);
+}   
+.mPT2{ 
+    font-family: Proxima Nova;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17.05px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 0%;
+    color:  rgba(50, 57, 65, 1);
+    
+
+}
+.flippedImageGift {
+    transform: rotate(-90deg);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.BluePrice{
+    font-family: Proxima Nova Bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18.59px;
+    text-align: center;
+
+    color: rgba(0, 158, 255, 1);
+
+}
+
+
+
+@media (max-width: 1020px) {
+    .container{
+        display: none;
+    }
+    .mobileContainer{
+        display: flex;
+
+    }
+    .name{
+       
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 34.34px;
+        text-align: center;
+    
+    }
+    .yearsBlock{
+        gap: 2%;
+    }
+    .yearsFont{
+        
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18.59px;
+        text-align: center;
+
+    }
+    .buttonsBlock{
+        gap: 5%;
+    }
+    .button{
+            
+    
+    
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    text-align: center;
+    
+
+    padding-left: 13.5%;
+    padding-right: 13.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+    margin-top: 3%;
+    margin-bottom: 1%;
+
+    }
+    .totalBlock{
+        margin-top: 4%;
+        margin-bottom: 4%;
+        margin-left: 3%;
+        margin-right: 3%;
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        min-width: 90%;
+        
+    }
+    .priceBlock{
+        align-items: center;
+        margin-top: 3%;
+    }
+    .price1{
+        
+        font-size: 22px;
+        font-weight: 300;
+        line-height: 26.8px;
+        text-align: center;
+
+    }
+    .price2{
+        
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 46.28px;
+        text-align: center;
+
+    }
+
+    .paymentBlock{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .payMethod{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+
+
+    }    
+    .IconMob{
+        min-width:  18%;
+        height: auto;
+    }
+
+}
+@media (max-width: 590px){
+    .payMethod{
+        /* display:none ; */
+    }
+    .IconMob{
+        min-width:  10%;
+        height: auto;
+    }
+    .SegArrow{
+        justify-content: center;
+        max-width: 98%;
+    }
+
+}
