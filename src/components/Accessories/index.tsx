@@ -30,12 +30,13 @@ export default function Accessories() {
                     
                     <div className={styles.text1}>NINEBOT ENGINE SPEAKER</div>
                     <div className={styles.textBlock}>
-                        <div className={styles.text2}>The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle's accelerator, brake, speed, and other signals</div>
+                        <div className={styles.text2}>The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle`&quot;`s accelerator, brake, speed, and other signals</div>
                         <div className={styles.price}>$149.99</div>
                         <div className={styles.button}>ADD TO CART</div>
 
                     </div>
                 </div>
+
                 <div className={styles.item}>
                     <div className={styles.imgBlock}>
                         <Image src={ac2} alt='Модуль' className={styles.img}/>
@@ -150,7 +151,7 @@ export default function Accessories() {
                     
                     <div className={styles.text1}>NINEBOT ENGINE SPEAKER</div>
                     <div className={styles.textBlock}>
-                        <div className={styles.text2}>The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle's accelerator, brake, speed, and other signals</div>
+                        <div className={styles.text2}> The built-in engine sound simulation system can simulate the realistic engine roar based on the vehicle`&quot;`s accelerator, brake, speed, and other signals </div>
                         <div className={styles.price}>$149.99</div>
                         <div className={styles.button}>ADD TO CART</div>
 
